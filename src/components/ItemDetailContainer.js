@@ -15,7 +15,7 @@ function ItemDetailContainer() {
 
         setProd (catalogo.find(item => item.codigo === cosa))
         } else {
-            setProd ({codigo:"alfombra",descripcion: "peluda"})
+            setProd ({codigo:"NA",descripcion: "no disponible"})
         }
 
         console.log(prod,"item")
@@ -24,8 +24,8 @@ function ItemDetailContainer() {
 const muestraProducto = () =>{
     return (
         <React.Fragment>
-            <h1>{cosa.codigo}</h1>
-            <h1>{cosa.descripcion}</h1>           
+            <h1>{prod.codigo}</h1>
+            <h1>{prod.descripcion}</h1>           
         </React.Fragment>
     )
 }
